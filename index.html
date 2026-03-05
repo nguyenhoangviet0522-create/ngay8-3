@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy International Women's Day </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="" />
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+  <div class="background-decor"></div>
+  <div id="startScreen" class="start-screen">
+    <div class="heart-pulse">❤️</div>
+    <p>Bắt đầu</p>
+  </div>
+  <div id="fallingContainer"></div>
+
+
+  <div id="overlay" class="overlay" aria-hidden="true">
+    <div class="popup" role="dialog" aria-modal="true">
+      <div class="popup-close"><i class="fa-solid fa-xmark"></i></div>
+      <img id="popupImg" class="media" />
+      <div id="popupCaption" class="caption" aria-live="polite"></div>
+      <div class="content">
+        <p id="popupText" style="margin-top:6px;color:#6B2737;"></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="toastContainer" class="toast-container"></div>
+
+  <audio id="bgm" src="./style/nhac.mp3" loop></audio>
+  <audio id="popSound" src="./style/pop.mp3"></audio>
+  <script src="./style/script.js"></script>
+</body>
+
+</html>
